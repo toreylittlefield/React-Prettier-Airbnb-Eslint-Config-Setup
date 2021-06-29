@@ -15,6 +15,7 @@
 - [ESLint](#eslint)
 - [Airbnb Styles](#airbnb)
 - [Prettier](#prettier)
+- [Absolute Paths For Imports](#abs-paths)
 - [Tutorials & Resources](#tutorials)
 
 ---
@@ -111,7 +112,7 @@ Add to the .eslintrc.json config file for example:
 
 ---
 
-### <img src="https://prettier.io/icon.png" width="20" height="20"> Prettier Installation & Config <a name = "prettier"></a>
+### <img src="https://prettier.io/icon.png" width="20" height="20"> Prettier <a name = "prettier"></a>
 
 #### Prettier VS CODE
 Get the Prettier Extension & Install for VS Code
@@ -141,6 +142,54 @@ Add to .prettierrc your configuration settings for example:
 - [Prettier Configuration Docs](https://prettier.io/docs/en/configuration.html)
 
 ---
+
+### Absolute Paths React <a name ="abs-paths"></a>
+
+#### What Are Absolute Paths?
+Instead of...
+```
+import Icon from './../../components/icon';
+```
+Absolute paths allow to import like so:
+```
+import Icon from components/icon';
+```
+
+To use absolute paths in React
+- Create jsconfig.json file & add something like...
+
+##### Example
+
+```
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "react"
+  },
+  "exclude": ["node_modules", "**/node_modules/*"],
+  "include": ["src"]
+}
+```
+In the above example we assume that the `src` folder is the directory where all the code lives for the React project.
+
+Therefore `src` will be your base path for the imports. Otherwise you can modify the configuration above to fit your project's needs.
+
+`"exclude": ["node_modules", "**/node_modules/*"],` line allows to to exclude node modules from these rules
+
+##### Another Simple Example:
+```
+{
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
+  "include": ["src"]
+}
+```
+
+---
+
 ## <img src="https://avatars.githubusercontent.com/u/366329?s=200&v=4" width="20" height="20"> Additional Configurations Examples & Tutorials <a name = "tutorials"></a>
 #### Paulo Ramos Examples
 - [Paulo Ramos Github: eslint-prettier-airbnb-react](https://github.com/paulolramos/eslint-prettier-airbnb-react)
