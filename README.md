@@ -150,7 +150,7 @@ Instead of...
 ```
 import Icon from './../../components/icon';
 ```
-Absolute paths allow to import like so:
+Absolute paths allow imports like so:
 ```
 import Icon from components/icon';
 ```
