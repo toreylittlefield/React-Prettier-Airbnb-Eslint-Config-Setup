@@ -19,6 +19,7 @@ The following installation & setup guide is for the `create-react-app` and are o
 ---
 ## 📝 Table of Contents
 
+- [Quick Start](#quick-start)
 - [ESLint](#eslint)
 - [Airbnb Styles](#airbnb)
 - [Prettier](#prettier)
@@ -28,6 +29,13 @@ The following installation & setup guide is for the `create-react-app` and are o
 ---
 
 ## Dependencies & Installation Instructions 
+
+### Quickstart <a name = "quick-start"></a> 
+
+Install all devDependencies in one line 
+```
+npm eslint eslint-config-airbnb eslint-config-node eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier --save-dev
+```
 
 
 ### <img src="https://d33wubrfki0l68.cloudfront.net/204482ca413433c80cd14fe369e2181dd97a2a40/092e2/assets/img/logo.svg" width="45" height="20">  ESLint <a name = "eslint"></a> 
