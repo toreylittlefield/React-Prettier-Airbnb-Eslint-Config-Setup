@@ -96,16 +96,12 @@ echo {}> .eslintrc.json
 Add to the .eslintrc.json config file for example:
 - Note if you don't want to use Prettier mentions of it in this file  
 ```
+// .eslintrc.json
 {
-  "extends": ["airbnb", "airbnb/hooks", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended"],
+  "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ],
+    "prettier/prettier": "error",
     "no-unused-vars": "warn",
     "no-console": "warn",
     "func-names": "off",
@@ -122,6 +118,16 @@ Add to the .eslintrc.json config file for example:
     }
   }
 }
+```
+
+You can also create an ESLint ignore file `.eslintignore` to ignore folders or files
+
+```
+// .eslintignore
+public/**
+node_modules/**
+coverage/**
+src/registerServiceWorker.js
 ```
 
 #### See the Docs
@@ -158,7 +164,10 @@ touch .prettierrc
 Add to .prettierrc your configuration settings for example:
 ```
 {
-  "singleQuote": false
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 70
 }
 ```
 
