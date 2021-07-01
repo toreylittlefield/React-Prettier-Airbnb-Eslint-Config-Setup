@@ -72,7 +72,10 @@ If npm errors out and you receive a message like `ERR undefined` in your termina
 npm install eslint-config-airbnb@18.2.1 eslint@^7.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react@^7.21.5 eslint-plugin-react-hooks@^1.7.0 --save-dev
 ```
 
-Run Eslint Init
+#### Run Eslint Init (create .eslintrc.json)
+This will walk you through a config setup. Skip if you wish and just go to create a `.eslintrc.json` file yourself. 
+
+If you make a mistake in the setup it doesn't matter. You can change anything in the `.eslintrc.json` file whenever you wish.
 ```
 npx eslint --init
 ```
@@ -138,9 +141,9 @@ Install Prettier locally
 ```
 npm install --save-dev --save-exact prettier
 ```
-Create an empty config file
+Create an empty config file with Git
 ```
-echo {}> .prettierrc.json
+touch .prettierrc
 ```
 #### Example Prettier
 
@@ -169,7 +172,11 @@ import Icon from components/icon';
 ```
 
 To use absolute paths in React
-- Create jsconfig.json file & add something like...
+- Create jsconfig.json file with Git
+```
+touch jsconfig.json
+```
+- & add something like...
 
 ##### Example
 
