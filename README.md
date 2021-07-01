@@ -8,6 +8,13 @@
 - Formatting code with the [Prettier Extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - Using absolute paths/imports with [jsconfig.json](https://code.visualstudio.com/docs/languages/jsconfig)
 
+#### Notes & Info
+The following installation & setup guide is for the `create-react-app` and are only tested using it and not on other React app configurations. 
+
+- More advanced configurations of webpack & babel are possible but are not included in this guide.
+
+- These guide uses `npm` as installation, although you can use YARN but commands are not provided.
+
 
 ---
 ## 📝 Table of Contents
@@ -59,6 +66,12 @@ OR Shortcut For _React Projects_
 ```
 npx install-peerdeps --dev eslint-config-airbnb
 ```
+##### Troubleshooting Tip
+If npm errors out and you receive a message like `ERR undefined` in your terminal try :
+```
+npm install eslint-config-airbnb@18.2.1 eslint@^7.2.0 eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react@^7.21.5 eslint-plugin-react-hooks@^1.7.0 --save-dev
+```
+
 Run Eslint Init
 ```
 npx eslint --init
