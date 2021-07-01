@@ -246,4 +246,7 @@ Therefore `src` will be your base path for the imports. Otherwise you can modify
 ](https://www.youtube.com/watch?v=SydnKbGc7W8)
 - [Github Setup Tutorial](https://gist.github.com/bradtraversy/aab26d1e8983d9f8d79be1a9ca894ab4)
 
+#### THOMAS LOMBART
+- [THOMAS LOMBART Tutorial](https://thomaslombart.com/setup-eslint-prettier-react/)
+
 
