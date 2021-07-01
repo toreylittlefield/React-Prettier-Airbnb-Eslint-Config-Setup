@@ -34,7 +34,7 @@ The following installation & setup guide is for the `create-react-app` and are o
 
 Install all devDependencies in one line 
 ```
-npm eslint eslint-config-airbnb eslint-config-node eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier --save-dev
+npm install eslint eslint-config-airbnb eslint-config-node eslint-config-prettier eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks prettier --save-dev
 ```
 
 
