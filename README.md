@@ -176,8 +176,6 @@ In the above example we assume that the `src` folder is the directory where all 
 
 Therefore `src` will be your base path for the imports. Otherwise you can modify the configuration above to fit your project's needs.
 
-`"exclude": ["node_modules", "**/node_modules/*"],` line allows to to exclude node modules from these from type checking & and Intellisense stuff in VS Code. See more details about setuping up a jsconfig in the VS Code docs: [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_writing-jsconfigjson)
-
 ##### Another Simple Example:
 ```
 {
@@ -187,6 +185,10 @@ Therefore `src` will be your base path for the imports. Otherwise you can modify
   "include": ["src"]
 }
 ```
+
+##### Note About JavaScript projects (jsconfig.json)
+`"exclude": ["node_modules", "**/node_modules/*"],` or the `include` line allows refers to including or excluding node modules from these from type checking & and Intellisense stuff in VS Code. See more details about setuping up a jsconfig in the VS Code docs: [Working with JavaScript](https://code.visualstudio.com/docs/nodejs/working-with-javascript#_writing-jsconfigjson)
+
 
 ---
 
